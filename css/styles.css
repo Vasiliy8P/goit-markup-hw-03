@@ -156,7 +156,12 @@ a {
 /* section about company */
 
 .section {
-    margin-bottom: 94px;
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
+
+.section-work{
+    padding-top: 0;
 }
 
 .section-title {
@@ -199,7 +204,6 @@ a {
 
 .section-team {
     background-color: var(--secondary-background-color);
-    padding: 94px 0;
 }
 
 .item-position {
