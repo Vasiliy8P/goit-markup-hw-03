@@ -147,6 +147,8 @@ img {
 .hero {
     background-color: #2F303A;
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
@@ -274,22 +276,25 @@ img {
     display: flex;
 }
 
-.list-team .item:not(:nth-child(4n)) {
+.list-team li:not(:nth-child(4n)) {
     margin-right: 30px;
 }
 
-.item-position {
-    width: 270px;
+.list-team li {
+    width: calc((100% - 90px) / 4);
     background-color: var(--primary-background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    text-align: center;
-    padding-bottom: 30px;
 }
 
 .image-position {
     display: block;
-    margin-bottom: 30px;
+}
+
+.list-team .item-position {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
 }
 
 .list-team .member {
@@ -369,8 +374,8 @@ img {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 575px;
     margin-bottom: 50px;
+    justify-content: center;
 }
 
 .filter button {
@@ -395,7 +400,7 @@ img {
     margin-right: 8px;
 }
 
- .filter button:hover,
+.filter button:hover,
 .filter button:focus {
     color: var(--white-text-color);
     background-color: var(--accent-color);
@@ -410,6 +415,10 @@ img {
     gap: 30px;
 }
 
+.examples-projects li {
+    width: calc((100% - 60px) / 3);
+}
+
 .examples-projects a {
     color: inherit;
     display: inline-block;
@@ -420,7 +429,6 @@ img {
 }
 
 .project-text {
-    width: 370px;
     padding-top: 20px;
     padding-left: 24px;
     padding-bottom: 20px;
